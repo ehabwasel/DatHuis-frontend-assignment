@@ -1,14 +1,43 @@
-import React from "react";
-
-
-
-// Render a styled text input with the standard input color, and one with a custom input color
+import React, { useState, useEffect } from 'react';
+import MOCKDATA from './MOCK_DATA.json';
+import InputField from './components/Input';
+import DropDownMenu from './components/DropDown';
+import {
+  AppContainer,
+  StyledWrapper,
+} from '../src/components/styled/appContainer.style';
 
 const App = () => {
+  const [contactList, setContactList] = useState([]);
+  const [selectedName, setSelectedName] = useState('');
+
+  useEffect(() => {
+    const contactsArray = MOCKDATA.map((name) => name.name);
+    const delNullValues = contactsArray.filter((contact) => contact != null);
+    setContactList(delNullValues);
+  }, []);
+
+  const filteredNames = contactList.filter((name) => {
+    if (selectedName == '') {
+      return name;
+    } else if (name.toLowerCase().includes(selectedName.toLowerCase())) {
+      return name;
+    }
+  });
   return (
-    <>
-      <h1>DatHuis frontend assignment</h1>
-    </>
+    <AppContainer>
+      <StyledWrapper>
+        <InputField
+          selectedName={selectedName}
+          setSelectedName={setSelectedName}
+        />
+        <DropDownMenu
+          selectedName={selectedName}
+          setSelectedName={setSelectedName}
+          filteredNames={filteredNames}
+        />
+      </StyledWrapper>
+    </AppContainer>
   );
 };
 

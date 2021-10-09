@@ -5,7 +5,7 @@
 <p align="center"> :pushpin: Please  Cick on image to find the live demo 	:shield: :rocket:	:rocket: </p>
   </a>
   </br>
-## DatHuis frontend assignment
+<h2> DatHuis frontend assignment </h2>
 
 The goal of this assignment is to give you an idea of how it would be to work in the DatHuis stack and us an idea of the quality of code we can expect from you working at DatHuis. For the assignment we would like you to build a search as you type dropdown component. The user story is defined as follows:
 

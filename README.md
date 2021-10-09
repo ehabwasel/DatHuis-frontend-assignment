@@ -1,4 +1,11 @@
-# DatHuis frontend assignment
+<p align="center">
+  <a href="https://dathuis-assigment.netlify.app/">
+   <img src="https://www.vacaturevia.nl/wp-content/uploads/job-manager-uploads/company_logo_image/2018/03/dathuisLogo-ginny-1.png" alt="Logo" width="300" height="150">
+<h2 align="center"> Dut Huis 	:bow_and_arrow: ⚔️</h2>
+<p align="center"> :pushpin: Please  Cick on image to find the live demo 	:shield: :rocket:	:rocket: </p>
+  </a>
+  </br>
+## DatHuis frontend assignment
 
 The goal of this assignment is to give you an idea of how it would be to work in the DatHuis stack and us an idea of the quality of code we can expect from you working at DatHuis. For the assignment we would like you to build a search as you type dropdown component. The user story is defined as follows:
 
